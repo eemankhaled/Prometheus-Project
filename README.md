@@ -146,5 +146,7 @@ kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-passwor
 
 
 
+
+
 ##conclusion
 Ultimately, this project set up and configured important tools including Helm, Prometheus, Grafana, Docker, Kubectl, Minikube, and Minikube to allow efficient Kubernetes environment monitoring. We were able to obtain important insights into our Kubernetes cluster's health, performance, and resource use by employing Prometheus and Grafana to gather, store, and visualize metrics from our cluster. We can keep an eye on things and address problems quickly with this configuration, which guarantees the reliability and dependability of our Kubernetes services.
