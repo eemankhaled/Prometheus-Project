@@ -88,6 +88,7 @@ bash
 $ ./get_helm.sh
 
 
+
 ### Deploy Prometheus
 1.Add Prometheus Helm repository
 bash
@@ -101,17 +102,15 @@ helm install prometheus prometheus-community/prometheus
 bash
 helm repo update
 
-4.Install Prometheus:
-bash
-helm install prometheus prometheus-community/prometheus
-
-5.Expose Prometheus service:
+4.Expose Prometheus service:
 bash
 kubectl expose service prometheus-server — type=NodePort — target-port=9090 — name=prometheus-server-ext
 
-6.Open Web App of Prometheus
+5.Open Web App of Prometheus
 bash
 minikube service prometheus-server-ext
+
+
 
 
 
@@ -129,18 +128,22 @@ helm install grafana grafana/grafana
 bash
 helm repo update
 
-3.Expose Grafana service:
+4.Expose Grafana service:
 bash
 kubectl expose service grafana — type=NodePort — target-port=3000 — name=grafana-ext
 
-3.Open Grafana Web APP
+5.Open Grafana Web APP
 bash
 minikube service grafana-ext
 
 
-## Get Grafana Credintials
+
+
+### Get Grafana Credintials
 bash
 kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+
+
 
 
 ##conclusion
