@@ -71,7 +71,10 @@ $ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 3. Start Minikube:
 bash 
 $ minikube start --driver=docker --force
-![Uploading Screenshot 2024-05-02 214630.png…]()
+
+
+<img width="581" alt="Screenshot 2024-05-02 221328" src="https://github.com/eemankhaled/Prometheus-Project/assets/161209853/0bcb42f0-d486-45ff-8c20-601ec1ec869d">
+
 
 
 ## Helm Installation
@@ -103,16 +106,15 @@ helm install prometheus prometheus-community/prometheus
 bash
 helm repo update
 
-
-
 4.Expose Prometheus Service:
 bash
 kubectl expose service prometheus-server — type=NodePort — target-port=9090 — name=prometheus-server-ext
 
+<img width="581" alt="Screenshot 2024-05-02 221328" src="https://github.com/eemankhaled/Prometheus-Project/assets/161209853/b60b47e9-cc60-469c-88dd-a02ca286795f">
+
 5.Open Web App of Prometheus
 bash
 minikube service prometheus-server-ext
-
 
 
 
