@@ -73,7 +73,7 @@ bash
 $ minikube start --driver=docker --force
 
 
-<img width="581" alt="Screenshot 2024-05-02 221328" src="https://github.com/eemankhaled/Prometheus-Project/assets/161209853/0bcb42f0-d486-45ff-8c20-601ec1ec869d">
+<img width="570" alt="Screenshot 2024-05-02 214630" src="https://github.com/eemankhaled/Prometheus-Project/assets/161209853/83c760e4-7665-4f9a-9887-345ed97bc686">
 
 
 
@@ -159,4 +159,5 @@ Ultimately, this project set up and configured important tools including Helm, P
 
 <img width="644" alt="Screenshot 2024-05-02 221452" src="https://github.com/eemankhaled/Prometheus-Project/assets/161209853/0d6bf31f-94f3-4576-941d-87f15e4ec746">
 
-![photo_2024-05-03_22-03-39](https://github.com/eemankhaled/Prometheus-Project/assets/161209853/ae674c83-5620-4c0c-9597-619cf0c341ad)
+![photo_2024-05-03_22-03-39](https://github.com/eemankhaled/Prometheus-Project/assets/161209853/4bff9375-26e1-4b71-b9ff-f0a3165166ff)
+
